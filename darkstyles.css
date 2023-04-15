@@ -151,8 +151,24 @@
     100% { transform: translate(1%)}
  }
 
- @media only screen and(max-width: 800px){
+ 
+ @media (max-height:740px){
+  .header{
+    font-size:60px;
+  }
+
+ }
+
+ @media (max-width:1020px) {
   .button{
-    left:0px;
+    left:600px;
   }
 }
+
+  
+  @media (max-width:940px){
+    .button{
+      left:290px;
+      top:620px;
+    }
+  }
