@@ -1,0 +1,158 @@
+@font-face {   
+    font-family: "Metropolis med";   
+    src: url('fonts/Metropolis-Medium.otf') format('opentype');             
+  }
+  
+  @font-face {
+    font-family: "Metropolis bold";
+    src: url('fonts/Metropolis-Bold.otf') format('opentype'); 
+  }
+  
+  @font-face {
+    font-family: "Metropolis black";
+    src: url('fonts/Metropolis-Black.otf') format('opentype'); 
+  }
+
+  @font-face {
+    font-family: "Metropolis black italic";
+    src: url('fonts/Metropolis-BlackItalic.otf') format('opentype'); 
+  }
+
+  
+
+
+  body {
+    background: url("images/trippybackgroundpurple.png");
+    background-repeat: no-repeat;
+    padding-left: 150px;
+    background-position-y:-550px;
+    background-position-x: -350px;
+  }
+
+
+  .header{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: fixed;
+    text-align:right;
+    left:50px;
+    top:0px;
+    padding:15px;
+    font-size: 70px;
+    font-family: "Metropolis black italic";
+    color:#03C988;
+    background-color: #7A0BC0;
+    height:100%;
+    transform: rotate(-180deg);
+    z-index:3;
+  }
+  
+  .theres{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: fixed;
+    left:0px;
+    top:0px;
+    padding:20px 15px;
+    text-align:right;
+    font-size: 25px;
+    font-family: "Metropolis black italic";
+    color:#03C988;
+    background-color: #fff;
+    height:100%;
+    transform: rotate(-180deg);
+    z-index:2;
+  }
+
+
+  .social{
+    display:none;
+   
+  }
+
+  .dark-social{
+    position:fixed;
+    width: 35px;
+    right: 0px;
+    top:0px;
+    height: 100%;
+    padding:5px;
+    background-color: #fff;
+    z-index:3;
+    border-left:15px solid #7A0BC0;
+  }
+
+  .dark-social:hover{
+    cursor: pointer;
+  }
+
+  .manekineko{
+    background-image: url("images/creepyneko.png");
+    margin-left: 25px;
+    display:flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px 484.3396px;
+    height: 700px;
+    width: 500px;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+     animation-iteration-count: infinite;
+  }
+  
+  .wave{
+    display:none;
+  }
+
+  .creepywave{
+    position: absolute;
+    top:328px;
+    left: 490px;
+    -webkit-animation-name: wobble; 
+    animation-name: wobble; 
+  }
+
+
+  .button{
+    border-radius: 30px;
+    width: 200px;
+    background-color:#7A0BC0;
+    padding: 20px 25px;
+    color:#F857B4;
+    z-index: 1;
+    font-size: 22px;
+    position:absolute;
+    text-align: center;
+    top: 350px;
+    left: 700px;
+    font-family: "Metropolis black";
+    border: 15px solid #03C988;
+  }
+
+  .button:hover{
+    background-color:#270082;
+    color:#03C988;
+    cursor:pointer;
+  }
+
+  @keyframes wobble { 
+    0% { transform: translateX(0%); } 
+    15% { transform: translateX(-31%) rotate(-18deg); } 
+    30% { transform: translateX(10%) rotate(14deg); } 
+    45% { transform: translateX(-38%) rotate(-16deg); } 
+    60% { transform: translateX(18%) rotate(15deg); } 
+    75% { transform: translateX(-35%) rotate(-13deg); } 
+    90% { transform: translateX(13%) rotate(10deg); } 
+    100% { transform: translate(1%)}
+ }
+
+ @media only screen and(max-width: 800px){
+  .button{
+    left:0px;
+  }
+}
