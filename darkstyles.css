@@ -172,3 +172,82 @@
       top:620px;
     }
   }
+
+  @media (max-width:400px){
+    .header{
+      font-size:28px;
+      left:24px;
+      padding:2px;
+    }
+    .theres{
+      font-size:16px;
+      left:-8px;
+    }
+
+    body {
+      background: url("images/trippybackgroundpurple.png");
+      background-repeat: no-repeat;
+      background-position-y:-741px;
+      background-position-x: -526px;
+      padding-left: 50px;
+    }
+
+    .dark-social{
+      display:none;
+    }
+
+    .manekineko{
+      margin-left:0px;
+      height: 471px;
+      width: 332px;
+    }
+  
+    
+    .creepywave{
+      top:208px;
+      left: 280px;
+    }
+
+
+  .button{
+    top: 467px;
+    left: 82px;
+  }
+
+  }
+
+  @media (max-width: 320px){
+    .header{
+      display:none;
+    }
+
+    .theres{
+      display:none;
+    }
+
+    .manekineko{
+      margin-left: -18px;
+    }
+
+    body{
+      padding: 0px;
+      background-position-y:-741px;
+      background-position-x: -635px;
+    }
+
+    .creepywave{
+      left: 212px;
+    }
+
+    .button{
+      left: 9px;
+      top:465px;
+      border-color:#7A0BC0;
+      background-color:#270082;
+    }
+
+    .button:hover{
+      background-color:#03C988;
+      color:#7A0BC0;
+    }
+  }
